@@ -2,6 +2,15 @@
 
 # Flutter InAppWebView Plugin [![Share on Twitter](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Flutter%20InAppBrowser%20plugin!&url=https://github.com/pichillilorenzo/flutter_inappwebview&hashtags=flutter,flutterio,dart,dartlang,webview) [![Share on Facebook](https://img.shields.io/badge/share-facebook-blue.svg?longCache=true&style=flat&colorB=%234267b2)](https://www.facebook.com/sharer/sharer.php?u=https%3A//github.com/pichillilorenzo/flutter_inappwebview)
 
+> [!NOTE]
+> **Custom Fork Notice (`kc_flutter_inappwebview`)**
+> 
+> Source code này được clone từ official [flutter_inappwebview v6.1.5](https://github.com/pichillilorenzo/flutter_inappwebview/tree/v6.1.5).
+> 
+> **Các tùy chỉnh so với phiên bản gốc 6.1.5:**
+> - **iOS Fullscreen/Picture-in-Picture Fix:** Loại bỏ `"PGHostedWindow"` khỏi danh sách `nonVideoClasses` trong file `InAppWebView.swift` (hàm `isVideoPlayerWindow`), giúp WebView nhận diện đúng window Picture-in-Picture (PiP) là video player.
+> - **Monorepo Local Dependencies:** Cấu hình lại các phụ thuộc giữa các sub-package trong monorepo theo đường dẫn nội bộ (`path: ../...`).
+
 ![InAppWebView-logo](https://user-images.githubusercontent.com/5956938/195422744-bdcfed16-73f0-4bc9-94ab-ecf10771a1c4.png)
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
